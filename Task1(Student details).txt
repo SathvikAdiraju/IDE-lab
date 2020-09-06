@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main
+{
+      public static void main(String args[])
+      {
+          String name;
+          int rollno,m1, m2, m3, m4;
+           
+          Scanner SC=new Scanner(System.in);
+           
+          System.out.print("Name: ");
+          name=SC.nextLine();
+          System.out.print("Roll Number: ");
+          roll=SC.nextInt();
+          System.out.print("Enter marks out of 30\n");
+          System.out.print("Enter marks in Subject 1, Subject 2, Subject 3, Subject 4 :");
+          m1=SC.nextInt();
+          m2=SC.nextInt();
+          m3=SC.nextInt();
+          m4=SC.nextInt();
+           
+          int total=m1+m2+m3+m4;
+          float percentage=(float)total/120*100;
+           
+          System.out.println("Roll Number:" + rollno +"\tName: "+name);
+          System.out.println("Marks (m1, m2, m3, m4:) " +m1+", "+m2+", "+m3+", "+m4);
+          System.out.println("Total: "+total +"\tPercentage: "+percentage);
+          System.out.println("Average marks = "+total/4);
+
+      }
+          
+}
+	
